@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+	<script>
+	  var socket = io('http://localhost');
+	  socket.on('tweet', function (data) {
+	    console.log(data);
+	    document.getElementById("tweet").innerHTML = data.text;
+	  });
+	</script>
+</head>
+<body>
+<div id="tweet">Nothing</div>
+
+</body>
+</html>
