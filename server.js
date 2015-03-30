@@ -70,7 +70,7 @@ var rate;
 
 var BUFFER_LENGTH = 10;
 
-client.stream('statuses/filter', {track: 'bieber'}, function(stream) {
+client.stream('statuses/filter', {track: 'ISIS'}, function(stream) {
 	
 	stream.on('data', function(tweet) {
 
